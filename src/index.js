@@ -1,5 +1,4 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import MyInfo from "/components/MyInfo";
 
-ReactDOM.render(<MyInfo />, document.getElementById("root"));
+ReactDOM.render(<h1>Hello</h1>, document.getElementById("root"));
