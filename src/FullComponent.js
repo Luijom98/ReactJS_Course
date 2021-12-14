@@ -1,12 +1,12 @@
 import React from "react";
 import MainContent from "../components/MainContent";
-import NavBar from "/components/NavBar";
 import Footer from "/components/Footer";
+import Header from "/components/Header";
 
 function FullComponent() {
   return (
     <div>
-      <NavBar />
+      <Header />
       <MainContent />
       <Footer />
     </div>
