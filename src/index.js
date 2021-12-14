@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import FullComponent from "./FullComponent";
+import App from "./App";
 
-ReactDOM.render(<FullComponent />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
