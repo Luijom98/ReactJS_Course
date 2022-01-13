@@ -1,20 +1,17 @@
 import React from "react";
 import ContactCard from "../components/ContactCard";
+import contactData from "../components/contactData";
 
 function propsPractice() {
-  return (
-    <div>
-      <ContactCard
-        contact={{
-          name: "Luis",
-          imgUrl:
-            "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.jiUg66oO8DiUwZYlDwy6jwHaFH%26pid%3DApi&f=1",
-          phone: "3325459874",
-          email: "luis@gmail.com"
-        }}
-      />
-    </div>
-  );
+  const cardComponents = contactData.map((contact) => (
+    <ContactCard
+      key={contact.id}
+      name={contact.name}
+      lastName={contact.lastName}
+      email={contact.email}
+    />
+  ));
+  return <div style={{ textAlign: "center" }}>{cardComponents}</div>;
 }
 
 export default propsPractice;
