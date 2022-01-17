@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import PropsPractice from "./propsPractice";
+// import PropsPractice from "./propsPractice";
 import "./styles.css";
 
-ReactDOM.render(<PropsPractice />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
